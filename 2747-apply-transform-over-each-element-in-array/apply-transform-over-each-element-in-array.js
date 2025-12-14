@@ -10,8 +10,7 @@ var map = function(arr, fn) {
     const returnedArray = [];
     let value = 0;
     for (let i = 0; i < arr.length; i++) {
-        value = fn(arr[i], i);
-        returnedArray.push(value);
+        returnedArray.push(fn(arr[i], i));
     }
     return returnedArray;
 };
